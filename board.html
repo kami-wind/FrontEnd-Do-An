@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management - MyApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/_Layout.css">
+    <link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Main Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="takeNote.html">Take Note</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Task Management</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="labelDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Label Management</a>
+                <ul class="dropdown-menu show" aria-labelledby="labelDropdown">
+                    <li><a class="dropdown-item active" href=""><span class="bullet"></span> Job</a></li>
+                    <li><a class="dropdown-item" href=""><span class="bullet"></span> Money</a></li>
+                    <li><a class="dropdown-item" href=""><span class="bullet"></span> Importance</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="user-nav">
+            <div class="user-info">
+                <img src="images/Nghĩa Lê.jpg" alt="User" class="user-img">
+                <span>User</span>
+            </div>
+            <div class="user-actions">
+                <i class="bi bi-gear"></i>
+                <i class="bi bi-box-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <header class="d-flex justify-content-start align-items-center py-2 px-3">
+            <a href="index.html">
+                <img src="images/Dai_Shogun.png(1).png" style="height: 60px;" alt="Logo">
+            </a>
+        </header>
+        <main role="main" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="createBoard.html">
+                        <div class="board create">Create New Board</div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="board bg-primary">
+                        <div>Board 1</div>
+                        <div class="board-icons">
+                            <i class="bi bi-info-circle"></i>
+                            <i class="bi bi-trash"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="board bg-danger">
+                        <div>Board 2</div>
+                        <div class="board-icons">
+                            <i class="bi bi-info-circle"></i>
+                            <i class="bi bi-trash"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="board bg-danger">
+                        <div>Board 3</div>
+                        <div class="board-icons">
+                            <i class="bi bi-info-circle"></i>
+                            <i class="bi bi-trash"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more boards as needed, using the same col-md-4 structure -->
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

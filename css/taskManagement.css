@@ -1,0 +1,100 @@
+.board-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.board-header {
+    margin-bottom: 10px;
+}
+
+.board-columns {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.board-column {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    width: calc(25% - 10px); /* Equal width for four columns */
+    padding: 10px;
+    flex: 0 0 calc(25% - 10px); /* Ensure flex-basis is set to match width */
+}
+
+.board-column-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.board-item {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.board-item-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.collaborator-sidebar {
+    position: fixed;
+    right: -255px;
+    top: 0;
+    width: 255px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+.collaborator-sidebar.active {
+    right: 0;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.collaborator-list {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.collaborator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.collaborator-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.collaborator-name {
+    font-size: 16px;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px 20px 10px 0px;
+}

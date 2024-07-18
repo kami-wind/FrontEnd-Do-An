@@ -1,0 +1,126 @@
+.table-container {
+    width: 100%;
+    max-width: 987px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #D9D9D9;
+}
+
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.pagination button,
+.pagination span {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.pagination .btn-light {
+    background-color: white;
+    border-color: white;
+}
+
+.pagination .btn-primary {
+    background-color: #4d8de4;
+    border-color: #4d8de4;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.status-deadline {
+    background-color: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.status-ongoing {
+    background-color: #13EC42;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    .table-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        margin-bottom: 10px;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .table th,
+    .table td {
+        padding: 5px;
+    }
+
+    .status-deadline {
+        font-size: 12px;
+        padding: 1px 5px;
+    }
+}

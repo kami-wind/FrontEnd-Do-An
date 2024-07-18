@@ -1,0 +1,68 @@
+.nav-item.dropdown .dropdown-menu {
+    background-color: #d9d9d9;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    display: block; /* Always display the dropdown */
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+    position: relative;
+    padding-left: 30px; /* Adjust spacing between bullet and text */
+}
+
+
+.nav-item.dropdown .dropdown-menu .dropdown-item.active {
+    background-color: #595e69;
+    color: black; 
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover, 
+.nav-item.dropdown .dropdown-menu .dropdown-item:focus {
+    background-color: #595e69;
+    color: white;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item.active::before {
+    background-color: black; /* Change circle color to black */
+    border-color: black; /* Change border color to black */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.note-card-custom {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with 20px gap */
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.note-card {
+    padding: 20px;
+}
+
+.note-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.note-content {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.note-tags .tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.875rem;
+}
+

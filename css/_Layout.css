@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 255px;
+    background-color: #d9d9d9;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 74px;
+    flex-grow: 1; /* This will make the nav take up all available space */
+}
+
+.nav-item {
+    margin: 0;
+}
+
+/* .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 74px;
+    color: #73767B;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+    background-color: #595e69;
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: #d9d9d9;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    display: none;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+    text-align: center;
+    font-weight: bold;
+    color: #73767B;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover, .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
+    background-color: #595e69;
+    color: white;
+} */
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 74px;
+    color: #73767B;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: #595e69;
+    color: white;
+}
+
+.nav-link.active {
+    background-color: #595e69;
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: #d9d9d9;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    display: none;
+    position: absolute; /* Adjusted position for dropdown menu */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+    text-align: center;
+    font-weight: bold;
+    color: #73767B;
+    position: relative; /* Ensure position for pseudo-element */
+    padding-left: 2rem; /* Space for circle */
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item::before {
+    content: "";
+    display: inline-block;
+    width: 0.6rem; /* Adjust size of circle */
+    height: 0.6rem; /* Adjust size of circle */
+    background-color: white; /* White fill color */
+    border: 1px solid #000; /* Black border */
+    border-radius: 50%; /* Make it round */
+    position: absolute;
+    left: 1rem; /* Position circle */
+    top: calc(50% - 0.3rem); /* Center vertically */
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover, 
+.nav-item.dropdown .dropdown-menu .dropdown-item:focus {
+    background-color: #595e69;
+    color: white;
+}
+
+.main-content {
+    margin-left: 255px;
+    margin-top: 80px;
+    padding: 20px;
+    width: calc(100% - 255px);
+}
+
+header {
+    background-color: #323338;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+/* This CSS */
+.user-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #323338;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-actions i {
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.user-actions i:hover {
+    color: #a1a1a1;
+}
+
+
+
