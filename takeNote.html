@@ -13,21 +13,25 @@
     <div class="sidebar">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Main Page</a>
+                <a class="nav-link" href="#">Main Page</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Take Note</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="taskManagement.html">Task Management</a>
+                <a class="nav-link active" href="takeNote.html">Take Note</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="labelDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Label Management</a>
-                <ul class="dropdown-menu show" aria-labelledby="labelDropdown">
-                    <li><a class="dropdown-item active" href=""><span class="bullet"></span> Job</a></li>
-                    <li><a class="dropdown-item" href=""><span class="bullet"></span> Money</a></li>
-                    <li><a class="dropdown-item" href=""><span class="bullet"></span> Importance</a></li>
+                <a class="nav-link dropdown-toggle" href="#" id="labelDropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Label</a>
+                <ul class="dropdown-menu" aria-labelledby="labelDropdown">
+                    <li><a class="dropdown-item" href="labelManagement.html">Job</a></li>
+                    <li><a class="dropdown-item" href="#">Money</a></li>
+                    <li><a class="dropdown-item" href="#">Importance</a></li>
                 </ul>
+            </li>
+
+            <hr class="nav-separator">
+            <li class="nav-title">Workspaces</li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="boardList.html">Workspaces</a>
             </li>
         </ul>
         <div class="user-nav">

@@ -1,0 +1,72 @@
+.board-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    color: #73767B;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.board-btn:hover, .board-btn:focus {
+    background-color: #595e69;
+    color: white;
+}
+/*  */
+.task-delete-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1160px;
+    height: 400px;
+}
+
+.task-delete-container h2 {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 20px -20px;
+}
+
+.delete-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.delete-content p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.delete-content .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    margin-right: 20px;
+}
+
+.delete-content .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.delete-content .btn-danger:hover, .delete-content .btn-danger:focus {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.delete-content .btn-primary:hover, .delete-content .btn-primary:focus {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}

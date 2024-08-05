@@ -13,6 +13,8 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
+
+    overflow-y: auto; /* Add this line to enable scrolling */
 }
 
 .nav {
@@ -23,49 +25,17 @@ body {
     flex-grow: 1; /* This will make the nav take up all available space */
 }
 
+.nav-2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* This will make the nav take up all available space */
+}
+
 .nav-item {
     margin: 0;
 }
 
-/* .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 74px;
-    color: #73767B;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-link:hover, .nav-link:focus, .nav-link.active {
-    background-color: #595e69;
-    color: white;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.nav-item.dropdown .dropdown-menu {
-    background-color: #d9d9d9;
-    width: 100%;
-    border: none;
-    box-shadow: none;
-    display: none;
-}
-
-.nav-item.dropdown .dropdown-menu .dropdown-item {
-    text-align: center;
-    font-weight: bold;
-    color: #73767B;
-}
-
-.nav-item.dropdown .dropdown-menu .dropdown-item:hover, .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
-    background-color: #595e69;
-    color: white;
-} */
 .nav-link {
     display: flex;
     align-items: center;
@@ -112,7 +82,7 @@ body {
 }
 
 .nav-item.dropdown .dropdown-menu .dropdown-item::before {
-    content: "";
+    content: none;
     display: inline-block;
     width: 0.6rem; /* Adjust size of circle */
     height: 0.6rem; /* Adjust size of circle */
@@ -129,6 +99,38 @@ body {
     background-color: #595e69;
     color: white;
 }
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: #d9d9d9;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    display: none;
+    position: relative;
+    z-index: 1000;
+    top: 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-separator {
+    border: 0;
+    height: 1px;
+    margin: 1rem 0;
+    background-color: #595e69;
+}
+
+.nav-title {
+    color: #73767B;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
 
 .main-content {
     margin-left: 255px;

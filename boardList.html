@@ -18,15 +18,22 @@
             <li class="nav-item">
                 <a class="nav-link" href="takeNote.html">Take Note</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Task Management</a>
-            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="labelDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Label Management</a>
-                <ul class="dropdown-menu show" aria-labelledby="labelDropdown">
-                    <li><a class="dropdown-item active" href=""><span class="bullet"></span> Job</a></li>
-                    <li><a class="dropdown-item" href=""><span class="bullet"></span> Money</a></li>
-                    <li><a class="dropdown-item" href=""><span class="bullet"></span> Importance</a></li>
+                <a class="nav-link dropdown-toggle" href="#" id="labelDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Label</a>
+                <ul class="dropdown-menu" aria-labelledby="labelDropdown">
+                    <li><a class="dropdown-item" href="labelManagement.html">Job</a></li>
+                    <li><a class="dropdown-item" href="#">Money</a></li>
+                    <li><a class="dropdown-item" href="#">Importance</a></li>
+                </ul>
+            </li>
+            <hr class="nav-separator">
+            <li class="nav-title">Workspaces</li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="doAnDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">do an</a>
+                <ul class="dropdown-menu" aria-labelledby="doAnDropdown">
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-clipboard2-fill"></i>Boards</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-people-fill"></i>Members</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i>Settings</a></li>
                 </ul>
             </li>
         </ul>
@@ -41,6 +48,11 @@
             </div>
         </div>
     </div>
+    
+    
+    
+    
+    
     <div class="main-content">
         <header class="d-flex justify-content-start align-items-center py-2 px-3">
             <a href="index.html">

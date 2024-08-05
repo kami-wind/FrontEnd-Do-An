@@ -1,3 +1,25 @@
+.board-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    color: #73767B;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.board-btn:hover, .board-btn:focus {
+    background-color: #595e69;
+    color: white;
+}
+/*  */
+
 .board-container {
     margin-top: 20px;
     overflow-x: auto; /* Enable horizontal scrolling */
