@@ -1,0 +1,11 @@
+.label-section {
+    padding: 20px;
+}
+
+.label-section .table th, .label-section .table td {
+    vertical-align: middle;
+}
+
+.label-section .table td.text-center {
+    text-align: center;
+}
